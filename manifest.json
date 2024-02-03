@@ -21,10 +21,20 @@
       ]
     }
   ],
-  //Manifest v3
+  // Manifest v3
   "web_accessible_resources": [{
     "resources": ["css/style.css"],
     "matches": [],
     "extension_ids": []
-   }]
+   }],
+   // New
+   "permissions": ["tabs"],
+   "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16":"icons/icon16.png",
+        "48":"icons/icon48.png",
+        "128":"icons/icon128.png"
+      }
+    }
 }
