@@ -1,7 +1,7 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "site-blocker",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Site blocker Chrome extension",
   "icons": {
     "16": "icons/icon16.png",
@@ -12,14 +12,19 @@
     {
       "matches": [
         "https://www.facebook.com/*",
-        "https://www.netflix.com/*"
+        "https://www.netflix.com/*",
+        "https://www.youtube.com/shorts/*",
+        "https://www.pokemonshowdown.com/*"
       ],
       "css": [
         "css/style.css"
       ]
     }
   ],
-  "web_accessible_resources": [
-    "css/style.css"
-  ]
+  //Manifest v3
+  "web_accessible_resources": [{
+    "resources": ["css/style.css"],
+    "matches": [],
+    "extension_ids": []
+   }]
 }
